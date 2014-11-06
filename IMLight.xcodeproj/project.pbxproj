@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA6182EB1A0B88D600735728 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA6182EA1A0B88D600735728 /* Credits.rtf */; };
+		DAA79EA91A0B65810094CD1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA79EA81A0B65810094CD1A /* AppDelegate.m */; };
+		DAA79EAB1A0B65810094CD1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA79EAA1A0B65810094CD1A /* main.m */; };
+		DAA79EAD1A0B65810094CD1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA79EAC1A0B65810094CD1A /* Images.xcassets */; };
+		DAA79EB01A0B65810094CD1A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA79EAE1A0B65810094CD1A /* MainMenu.xib */; };
+		DAA79EBC1A0B65810094CD1A /* IMLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA79EBB1A0B65810094CD1A /* IMLightTests.m */; };
+		DAA79EC61A0B68850094CD1A /* LED.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA79EC51A0B68850094CD1A /* LED.m */; };
+		DAA79ECE1A0B7F6A0094CD1A /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA79ECC1A0B7F6A0094CD1A /* LaunchAtLoginController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DAA79ECF1A0B7F6A0094CD1A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DAA79ECD1A0B7F6A0094CD1A /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA79EB61A0B65810094CD1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA79E9A1A0B65810094CD1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA79EA11A0B65810094CD1A;
+			remoteInfo = IMLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA6182E91A0B851F00735728 /* IMLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = IMLight.entitlements; sourceTree = "<group>"; };
+		DA6182EA1A0B88D600735728 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		DAA79EA21A0B65810094CD1A /* IMLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA79EA61A0B65810094CD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA79EA71A0B65810094CD1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAA79EA81A0B65810094CD1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAA79EAA1A0B65810094CD1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAA79EAC1A0B65810094CD1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DAA79EAF1A0B65810094CD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DAA79EB51A0B65810094CD1A /* IMLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA79EBA1A0B65810094CD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA79EBB1A0B65810094CD1A /* IMLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMLightTests.m; sourceTree = "<group>"; };
+		DAA79EC51A0B68850094CD1A /* LED.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LED.m; sourceTree = "<group>"; };
+		DAA79EC71A0B688B0094CD1A /* LED.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LED.h; sourceTree = "<group>"; };
+		DAA79ECB1A0B7F6A0094CD1A /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		DAA79ECC1A0B7F6A0094CD1A /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+		DAA79ECD1A0B7F6A0094CD1A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA79E9F1A0B65810094CD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA79EB21A0B65810094CD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA79E991A0B65810094CD1A = {
+			isa = PBXGroup;
+			children = (
+				DAA79EA41A0B65810094CD1A /* IMLight */,
+				DAA79EB81A0B65810094CD1A /* IMLightTests */,
+				DAA79EA31A0B65810094CD1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA79EA31A0B65810094CD1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA79EA21A0B65810094CD1A /* IMLight.app */,
+				DAA79EB51A0B65810094CD1A /* IMLightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA79EA41A0B65810094CD1A /* IMLight */ = {
+			isa = PBXGroup;
+			children = (
+				DA6182E91A0B851F00735728 /* IMLight.entitlements */,
+				DAA79ED01A0B7F740094CD1A /* LaunchAtLoginController */,
+				DAA79EC71A0B688B0094CD1A /* LED.h */,
+				DAA79EC51A0B68850094CD1A /* LED.m */,
+				DAA79EA71A0B65810094CD1A /* AppDelegate.h */,
+				DAA79EA81A0B65810094CD1A /* AppDelegate.m */,
+				DAA79EAC1A0B65810094CD1A /* Images.xcassets */,
+				DAA79EAE1A0B65810094CD1A /* MainMenu.xib */,
+				DAA79EA51A0B65810094CD1A /* Supporting Files */,
+			);
+			path = IMLight;
+			sourceTree = "<group>";
+		};
+		DAA79EA51A0B65810094CD1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA79EA61A0B65810094CD1A /* Info.plist */,
+				DAA79EAA1A0B65810094CD1A /* main.m */,
+				DA6182EA1A0B88D600735728 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAA79EB81A0B65810094CD1A /* IMLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA79EBB1A0B65810094CD1A /* IMLightTests.m */,
+				DAA79EB91A0B65810094CD1A /* Supporting Files */,
+			);
+			path = IMLightTests;
+			sourceTree = "<group>";
+		};
+		DAA79EB91A0B65810094CD1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA79EBA1A0B65810094CD1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAA79ED01A0B7F740094CD1A /* LaunchAtLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				DAA79ECB1A0B7F6A0094CD1A /* LaunchAtLoginController.h */,
+				DAA79ECC1A0B7F6A0094CD1A /* LaunchAtLoginController.m */,
+				DAA79ECD1A0B7F6A0094CD1A /* README.md */,
+			);
+			name = LaunchAtLoginController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA79EA11A0B65810094CD1A /* IMLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA79EBF1A0B65810094CD1A /* Build configuration list for PBXNativeTarget "IMLight" */;
+			buildPhases = (
+				DAA79E9E1A0B65810094CD1A /* Sources */,
+				DAA79E9F1A0B65810094CD1A /* Frameworks */,
+				DAA79EA01A0B65810094CD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMLight;
+			productName = IMLight;
+			productReference = DAA79EA21A0B65810094CD1A /* IMLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAA79EB41A0B65810094CD1A /* IMLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA79EC21A0B65810094CD1A /* Build configuration list for PBXNativeTarget "IMLightTests" */;
+			buildPhases = (
+				DAA79EB11A0B65810094CD1A /* Sources */,
+				DAA79EB21A0B65810094CD1A /* Frameworks */,
+				DAA79EB31A0B65810094CD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA79EB71A0B65810094CD1A /* PBXTargetDependency */,
+			);
+			name = IMLightTests;
+			productName = IMLightTests;
+			productReference = DAA79EB51A0B65810094CD1A /* IMLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA79E9A1A0B65810094CD1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = BlahGeek;
+				TargetAttributes = {
+					DAA79EA11A0B65810094CD1A = {
+						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					DAA79EB41A0B65810094CD1A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = DAA79EA11A0B65810094CD1A;
+					};
+				};
+			};
+			buildConfigurationList = DAA79E9D1A0B65810094CD1A /* Build configuration list for PBXProject "IMLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAA79E991A0B65810094CD1A;
+			productRefGroup = DAA79EA31A0B65810094CD1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA79EA11A0B65810094CD1A /* IMLight */,
+				DAA79EB41A0B65810094CD1A /* IMLightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA79EA01A0B65810094CD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA79EAD1A0B65810094CD1A /* Images.xcassets in Resources */,
+				DA6182EB1A0B88D600735728 /* Credits.rtf in Resources */,
+				DAA79EB01A0B65810094CD1A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA79EB31A0B65810094CD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA79E9E1A0B65810094CD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA79EC61A0B68850094CD1A /* LED.m in Sources */,
+				DAA79ECE1A0B7F6A0094CD1A /* LaunchAtLoginController.m in Sources */,
+				DAA79ECF1A0B7F6A0094CD1A /* README.md in Sources */,
+				DAA79EAB1A0B65810094CD1A /* main.m in Sources */,
+				DAA79EA91A0B65810094CD1A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA79EB11A0B65810094CD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA79EBC1A0B65810094CD1A /* IMLightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAA79EB71A0B65810094CD1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA79EA11A0B65810094CD1A /* IMLight */;
+			targetProxy = DAA79EB61A0B65810094CD1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAA79EAE1A0B65810094CD1A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA79EAF1A0B65810094CD1A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA79EBD1A0B65810094CD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAA79EBE1A0B65810094CD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAA79EC01A0B65810094CD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = IMLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAA79EC11A0B65810094CD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = IMLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAA79EC31A0B65810094CD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMLight.app/Contents/MacOS/IMLight";
+			};
+			name = Debug;
+		};
+		DAA79EC41A0B65810094CD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMLight.app/Contents/MacOS/IMLight";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA79E9D1A0B65810094CD1A /* Build configuration list for PBXProject "IMLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA79EBD1A0B65810094CD1A /* Debug */,
+				DAA79EBE1A0B65810094CD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA79EBF1A0B65810094CD1A /* Build configuration list for PBXNativeTarget "IMLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA79EC01A0B65810094CD1A /* Debug */,
+				DAA79EC11A0B65810094CD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA79EC21A0B65810094CD1A /* Build configuration list for PBXNativeTarget "IMLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA79EC31A0B65810094CD1A /* Debug */,
+				DAA79EC41A0B65810094CD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA79E9A1A0B65810094CD1A /* Project object */;
+}
