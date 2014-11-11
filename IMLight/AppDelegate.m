@@ -16,16 +16,28 @@
 
 @implementation AppDelegate
 
+- (void)initLED {
+    self.caps_led = [[LED alloc] initWithUsage:kHIDUsage_LED_CapsLock];
+    NSLog(@"LED inited!");
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.launchController = [[LaunchAtLoginController alloc] init];
     [self.startAtLoginItem setState:([self.launchController launchAtLogin] ? NSOnState : NSOffState)];
     
-    self.caps_led = [[LED alloc] initWithUsage:kHIDUsage_LED_CapsLock];
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self
+                                                           selector:@selector(initLED)
+                                                               name:NSWorkspaceDidWakeNotification
+                                                             object:NULL];
+    [self initLED];
+    
     [[NSDistributedNotificationCenter defaultCenter]
      addObserverForName:(__bridge NSString *)kTISNotifySelectedKeyboardInputSourceChanged
      object:nil
      queue:nil
      usingBlock:^(NSNotification * noti) {
+         
+         NSLog(@"In callback block of notification.");
          
          CFArrayRef all_im = TISCreateInputSourceList(NULL, false);
          for(int i = 0 ; i < CFArrayGetCount(all_im) ; i += 1) {

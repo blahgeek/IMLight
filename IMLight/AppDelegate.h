@@ -18,6 +18,8 @@
 
 @property (strong) LED * caps_led;
 @property (strong) LaunchAtLoginController * launchController;
+
+- (void)initLED;
 - (IBAction)setStartAtLogin:(id)sender;
 
 @end
