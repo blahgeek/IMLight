@@ -13,10 +13,13 @@
 #include <IOKit/IOCFPlugIn.h>
 #include <IOKit/hid/IOHIDLib.h>
 
+#define MAX_DEVICE_COUNT 16
+
 @interface LED : NSObject
 {
-    IOHIDDeviceRef  ledDevice;
-    IOHIDElementRef ledElement;
+    IOHIDDeviceRef  ledDevices[MAX_DEVICE_COUNT];
+    IOHIDElementRef ledElements[MAX_DEVICE_COUNT];
+    int device_count;
 }
 // Pass either kHIDUsage_LED_NumLock or kHIDUsage_LED_CapsLock
 -(id)initWithUsage:(uint32_t)usage;

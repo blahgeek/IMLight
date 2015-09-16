@@ -41,6 +41,8 @@ static NSMutableDictionary* _CreateMatchingDict(Boolean isDeviceNotElement,
 -(id)initWithUsage:(uint32_t)usage
 {
     self = [super init];
+    device_count = 0;
+    
     CFSetRef deviceCFSetRef = NULL;
     IOHIDDeviceRef* refs = NULL;
     // create a IO HID Manager reference
@@ -98,8 +100,8 @@ static NSMutableDictionary* _CreateMatchingDict(Boolean isDeviceNotElement,
             uint32_t elusage = IOHIDElementGetUsage(element);
             if (elusage == usage)
             {
-                ledDevice = (IOHIDDeviceRef)CFRetain(refs[deviceIndex]);
-                ledElement = (IOHIDElementRef)CFRetain(element);
+                ledDevices[device_count] = (IOHIDDeviceRef)CFRetain(refs[deviceIndex]);
+                ledElements[device_count++] = (IOHIDElementRef)CFRetain(element);
                 break;
             }
         next_element:  ;
@@ -114,37 +116,45 @@ static NSMutableDictionary* _CreateMatchingDict(Boolean isDeviceNotElement,
 Oops:  ;
     if (deviceCFSetRef) CFRelease(deviceCFSetRef);
     if (refs) free(refs);
+    
+    NSLog(@"LED Inited, %d devices found", device_count);
     return self;
 }
 
 -(void)dealloc
 {
-    if (ledDevice) CFRelease(ledDevice);
-    if (ledElement) CFRelease(ledElement);
+    for(int i = 0 ; i < device_count ; i += 1) {
+        
+        if (ledDevices[i]) CFRelease(ledDevices[i]);
+        if (ledElements[i]) CFRelease(ledElements[i]);
+    }
 //    [super dealloc];
 }
 
 -(void)setValue:(SInt32)value
 {
-    if (ledDevice && ledElement)
-    {
-        IOReturn err = IOHIDDeviceOpen(ledDevice, 0);
-        if (!err)
+    for(int i = 0 ; i < device_count ; i += 1) {
+        if (ledDevices[i] && ledElements[i])
         {
-            // create the IO HID Value to be sent to this LED element
-            uint64_t timestamp = 0;
-            IOHIDValueRef val = IOHIDValueCreateWithIntegerValue(kCFAllocatorDefault,
-                                                                 ledElement, timestamp,
-                                                                 value);
-            if (val)
+            IOReturn err = IOHIDDeviceOpen(ledDevices[i], 0);
+            if (!err)
             {
-                // now set it on the device
-                err = IOHIDDeviceSetValue(ledDevice, ledElement, val);
-                CFRelease(val);
+                // create the IO HID Value to be sent to this LED element
+                uint64_t timestamp = 0;
+                IOHIDValueRef val = IOHIDValueCreateWithIntegerValue(kCFAllocatorDefault,
+                                                                     ledElements[i], timestamp,
+                                                                     value);
+                if (val)
+                {
+                    // now set it on the device
+                    err = IOHIDDeviceSetValue(ledDevices[i], ledElements[i], val);
+                    CFRelease(val);
+                }
+                IOHIDDeviceClose(ledDevices[i], 0);
             }
-            IOHIDDeviceClose(ledDevice, 0);
+            if (err) printf("error 0x%X\n", err);
         }
-        if (err) printf("error 0x%X\n", err);
     }
+
 }
 @end
